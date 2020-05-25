@@ -27,7 +27,7 @@ header{
   margin: 0px;
   display: flex;
   align-items: center;
-  border-bottom: 5px solid #1fa38d;
+  background: #009688;
 }
 
 header .material-icons{
@@ -39,14 +39,14 @@ header .material-icons{
   header .material-icons{
     display: block;
     padding: 10px;
-    color: #2c7065;
+    color: #ffffff;
   }
 }
 
 header h1{
   width: 100%;
   padding-left: 20px;
-  color: #2c7065;
+  color: #ffffff;
 }
 @media(max-width: 700px)
 {
@@ -103,9 +103,9 @@ header li:active{
   .section-main{
     display: flex;
     position: relative;
-    align-items: center;
     justify-content: center;
-    min-height: 0em;
+    margin: 5px;
+    background: white;
   }
 }
 
@@ -113,8 +113,7 @@ header li:active{
 /*--------- Footer -------------*/
 
 footer {
-  background-color: #2c7065;
-
+  background: #009688;
 }
 
 footer p{

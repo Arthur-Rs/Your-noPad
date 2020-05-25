@@ -69,13 +69,13 @@
 }
 
 .note{
+  background-color: #dee8e3;
+  border-radius: 5px 0px 0px 5px;
   position: relative;
   display: flex;
-  background-color: #dfe9e4;
   list-style: none;
   padding-top: 15px;
   padding-bottom: 15px;
-  border-radius: 6px 0px 0px 6px;
   border-right: 5px solid #2c7065;
   margin-top: 10px;
   margin-bottom: 10px;

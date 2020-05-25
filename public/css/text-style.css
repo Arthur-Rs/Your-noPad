@@ -5,12 +5,10 @@
   width: 99%;
   margin: 0px;
   display: flex;
-  background-color: #f1f5f1;
-  box-shadow: 0 0 5px 0px #adadad;
+  background: #ffffff;
   padding: 10px;
   border-radius: 10px;
   align-items: center;
-
 }
 
 .box-text h2{
@@ -24,16 +22,15 @@
 {
   .config{
     width: 90%;
-    border: 2px solid #2c7065;
-    border-bottom: none;
+    border: 2px solid #009688;
+    /* border-bottom: 2px solid #00695C; */
     border-radius: 5px 5px 0px 0px;
-    margin-bottom: 0px;
-    box-shadow: 0px 2px 4px #969696;
+    margin: 0px;
     justify-content: center;
   }
 
   .box-text h2{
-    display: inline;
+    /* display: inline; */
   }
 }
 
@@ -46,11 +43,10 @@
 @media(max-width: 700px)
 {
   .config i{
-    margin-left: 2px;
-    margin-right: 2px;
-    margin: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    /* margin: 2px; */
     font-size: 20px;
-    
   }
 }
 
@@ -74,7 +70,7 @@
   width: 35px;
   margin-left: 5px;
   border: none;
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 
 .box-align{
@@ -90,6 +86,10 @@
 
   .font-size{
     text-align: center;
+    border: 1px solid;
+    color: black;
+    text-decoration: none;
+    color:;
   }
 }
 
@@ -129,8 +129,6 @@
     width: 100%;
     align-items: center;
     margin: 0px;
-    min-height: 0em;
-
   }
 }
 
@@ -139,23 +137,22 @@
   border-radius: 5px;
   height: 100%;
   font-family: 'Montserrat', sans-serif;
-  box-shadow: 0 0 5px 0px #adadad;
   border: none;
   padding: 10px;
-
   margin-bottom: 5px;
+  background: white;
 }
 
 @media(max-width: 700px)
 {
   .note-text{
     width: 90%;
-    border: 2px solid #2c7065;
+    border: 2px solid #009688;
     min-height: 33em;
     border-top: none;
-    border-radius: 0px 0px 0px 0px;
-    margin-top: 0px;
     resize: none;
+    position: relative;
+    border-radius: 0px;
   }
 }
 
