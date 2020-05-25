@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/note-style.css" rel="stylesheet">
+  <link href="css/text-style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <title>Anotações</title>
+</head>
+<body>
+  <header>
+    <span class="material-icons" id="get-notes" onclick="getBoxAnnotations()">
+      apps
+      </span>
+      <h1>Your noPad</h1>
+      <ul>
+        <li>Home</li>
+        <li>Sobre</li>
+      </ul>
+      <span class="material-icons" id="get-menu" >
+        menu
+        </span>
+  </header>
+  <section class="section-main">
+    
+    <div class="box-note" id="box-note">
+      <h3>Suas Anotações</h3>
+      <span class="material-icons" id="closeNotes" onclick="closeBoxAnnotations()">
+        arrow_back_ios
+      </span>
+
+      <ul id="notes">
+  
+        <li class="new-name" id="new-name">
+          <input type="text" id="name" placeholder="Nome"></input>
+          <i class="material-icons" id="add-new-note" onclick="downInputAnim()">add_circle</i>
+        </li>
+
+        <li class="add-note">
+          <a class="material-icons" id="add-note" onclick="upInputAnim()">add_circle</a>
+        </li>
+        
+      </ul>
+    </div>
+    <div class="box-text">
+      <h2 id="note-name">Sem anotação</h2>
+      <div class="config">
+  
+        <i for="font-size" class="material-icons">format_size</i>
+        <input type="number" class="font-size" id="font-size" value="16" min="0" max="150">
+        <i for="font-color" class="material-icons">format_color_text</i>
+        <input type="color" id="font-color">
+        <div class="box-align">
+          <a class="material-icons" id="bold"  onclick="bold()">format_bold</a>
+          <a class="material-icons" id="italic"  onclick="italic()">format_italic</a>
+          <a class="material-icons" id="strikethrough"  onclick="strikethrough()">format_strikethrough</a>
+          <a class="material-icons" id="underlined"  onclick="underlined()">format_underlined</a>
+        </div>
+        <div class="box-align">
+          <a class="material-icons" id="align-left"   onclick="alignLeft()">format_align_left</a>
+          <a class="material-icons" id="align-center" onclick="alignCenter()">format_align_center</a>
+          <a class="material-icons" id="align-right"  onclick="alignRight()">format_align_right</a>
+          <a class="material-icons" id="align-justify"onclick="alignJustify()">format_align_justify</a>
+        </div>  
+        
+      </div>
+      <textarea  type="text" class="note-text" id="text-area"></textarea>
+    </div>
+  </section>
+  <footer>
+    <p>Your noPad - 2020 | <a href="https://github.com/Arthur-Rs/Your-noPad" target="_black">GitHub <a></p>
+  </footer>
+
+  <script src="js/animations.js"></script>
+  <script src="js/elements.js"></script>
+  <script src="js/functions.js"></script>
+  <script src="js/editor.js"></script>
+  <script src="js/mobile.js"></script>
+  <script src="js/localStorage.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="/__/firebase/7.14.5/firebase-app.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="/__/firebase/7.14.5/firebase-analytics.js"></script>
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
+
+</body>
+</html>
