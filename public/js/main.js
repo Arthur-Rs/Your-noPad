@@ -117,10 +117,8 @@ textArea.addEventListener("input", () => {
   if(blockWriting()){
     return false 
   }
-''
   ANNOTATIONS.forEach(element => {
     element.id == SELECTED_ANNOTATION ? element.text = textArea.value : null
-    console.log(textArea.value)
   })
 
   init()
