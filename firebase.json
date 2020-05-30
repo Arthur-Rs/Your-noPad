@@ -1,20 +1,28 @@
 {
-  "database": {
-    "rules": "database.rules.json"
-  },
   "hosting": {
-    "site": "your-nopad",
+    "site": "yournopad",
     "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
     ]
+  },
+  "functions": {
+    "predeploy": [
+      "npm --prefix \"$RESOURCE_DIR\" run lint"
+    ],
+    "source": "functions"
+  },
+  "emulators": {
+    "functions": {
+      "port": null
+    },
+    "hosting": {
+      "port": 5000
+    },
+    "ui": {
+      "enabled": false
+    }
   }
 }
