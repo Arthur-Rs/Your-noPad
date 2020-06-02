@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+* {
+  font-family: "PT Sans", sans-serif;
+}
+
+body {
+  margin: 0px;
+  background: #ececec;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+
+header .header {
+  background: #009688;
+  align-items: baseline;
+}
+
+header .header * {
+  color: #eaeaea;
+}
+
+header .header span {
+  padding: 10px 10px 10px 10px;
+  border-radius: 100%;
+  margin: 0px 10px 0px 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  user-select: none;
+}
+
+header .header span:hover {
+  background: aliceblue;
+  color: #009688;
+}
+
+header .options {
+  background: white;
+  padding-bottom: 5px;
+}
+
+header .menu {
+  background: #eceff1;
+}
+header .options ul {
+  list-style: none;
+  display: flex;
+  margin: 0px;
+  margin-left: 10px;
+  padding: 0px;
+}
+
+header .options ul li {
+  padding: 4px;
+  width: 65px;
+  text-align: center;
+  transition: 0.2s;
+  cursor: pointer;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #009688;
+  user-select: none;
+}
+
+header .options ul li:hover {
+  background: #009688;
+  color: white;
+}
+
+header .options ul div {
+  border-left: 1px solid #009688;
+  margin: -1px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+section {
+  display: flex;
+  min-height: 720px;
+  /* background: #3f51b5; */
+}
+
+section .section-notes {
+  width: 20%;
+  background: #ffffff;
+  margin: 10px;
+  margin-right: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 2px solid black; */
+}
+
+section .section-notes .header {
+  color: #eaeaea;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background: #009688;
+  height: 8%;
+}
+
+section .section-notes .header .line {
+  background: #eaeaea;
+  height: 2px;
+  width: 80%;
+  align-items: center;
+  /* margin-bottom: 15px; */
+}
+
+section .section-notes .body {
+  width: 100%;
+}
+
+section .section-notes * {
+  list-style: none;
+  /* text-align: center; */
+}
+
+section .section-notes h2 {
+  margin: 2%;
+}
+
+section .section-notes .body ul {
+  /* background: aqua; */
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+section .section-notes .body li {
+  margin: 4px;
+  display: flex;
+  padding: 10px 15px;
+  background: #d6e6e6;
+  cursor: pointer;
+  user-select: none;
+  height: 50px;
+  width: calc(100% - 38px);
+}
+
+section .section-notes .body li:hover {
+  background: #bacccc;
+}
+
+section .section-notes .body li .text {
+  font-size: 24px;
+  /* background: #afbb3a; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+section .section-notes .body li .button {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+section .section-notes .body li .button * {
+  transition: 0.2s;
+}
+
+section .section-notes .body li .button *:hover {
+  color: #009688;
+}
+
+section .section-notes .body li .button .close:hover {
+  color: #f44336;
+}
+
+section .section-notes .body li .text .description {
+  /* background: #c4c79e; */
+  font-size: 14px;
+}
+
+section .section-notes .body .add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+section .section-notes .body .add span {
+  color: #d4d4d4;
+  cursor: pointer;
+}
+
+section .section-notes .body .add span:hover {
+  color: #009688;
+}
+
+section .section-editor {
+  width: 80%;
+  background: #2196f3;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+section .section-editor div {
+  height: 95%;
+  width: 100%;
+  background: #ffffff;
+}
+
+section .section-editor iframe {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+section .section-editor .tool-bar {
+  height: 5%;
+  width: 100%;
+  background: #009688;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+section .section-editor .tool-bar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  justify-content: center;
+  padding: 0px;
+  width: 100%;
+}
+
+section .section-editor .tool-bar li {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+section .section-editor .tool-bar li * {
+  color: #ececec;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 3px;
+  transition: 0.2s;
+}
+
+section .section-editor .tool-bar .button *:hover {
+  background: #006f65;
+}
+
+section .section-editor .tool-bar .button *:active {
+  background: #004e47;
+}
+
+section .section-editor .tool-bar .button:hover {
+  background: #006f65;
+}
+
+section .section-editor .tool-bar .button:active {
+  background: #004e47;
+}
+
+section .section-editor .tool-bar #undo {
+  transform: scale(-1, 1);
+}
+
+section .section-editor .tool-bar li select {
+  color: #009688;
+  border: none;
+  background: #eaeaea;
+}
+
+section .section-editor .tool-bar li input[type="color"] {
+  background: none;
+  border: none;
+  width: 15px;
+  height: 20px;
+}
+section .section-editor .tool-bar li *:focus {
+  outline: none;
+}
+
+section .section-editor .tool-bar li select option {
+  color: #009688;
+  border: none;
+}
+
+section .section-editor .tool-bar .line {
+  background: #ececec;
+  height: 23px;
+  width: 2px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #009688;
+}
+
+footer * {
+  color: white;
+  text-decoration: none;
+}
+
+.box-file {
+  background: #13c2de;
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  left: 9px;
+  top: 118px;
+  display: none;
+}
+
+.box {
+  background: #fdfdfd;
+  box-shadow: 0px 0px 3px #cccccc;
+  top: 113px;
+}
+
+.box .line {
+  width: 90%;
+
+  justify-self: center;
+
+  height: 2px;
+
+  background: black;
+}
+
+.box ul {
+  list-style: none;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+}
+
+.box ul li {
+  padding: 2px 3px 3px 2px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box-download {
+  position: absolute;
+  width: 200px;
+  height: 400px;
+  left: 209px;
+  display: none;
+}
+
+.box-edit {
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  left: 80px;
+  display: none;
+}
+
+.box-add {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  left: 153px;
+  display: none;
+}
+
+.box-format {
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  left: 225px;
+  display: none;
+}
+
+.box-text {
+  position: absolute;
+  width: 200px;
+  height: 400px;
+  left: 425px;
+  display: none;
+}
+
+.box-paragraph {
+  position: absolute;
+  width: 200px;
+  height: 400px;
+  left: 425px;
+  display: none;
+}

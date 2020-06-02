@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Your noPad</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <span class="material-icons">menu</span>
+        <h1>Your noPad</h1>
+        <h2 id="doc_name">- Sem documento</h2>
+      </div>
+      <div class="options">
+        <ul>
+          <div></div>
+          <li id="button-file"><span>Arquivo</span></li>
+          <div></div>
+          <li id="button-edit"><span>Editar</span></li>
+          <div></div>
+          <li id="button-add"><span>Inserir</span></li>
+          <div></div>
+          <li id="button-format"><span>Formatar</span></li>
+          <div></div>
+        </ul>
+      </div>
+    </header>
+    <section>
+      <section class="section-notes">
+        <div class="header">
+          <h2>Suas anotações</h2>
+          <div class="line"></div>
+        </div>
+        <div class="body">
+          <ul>
+            <li>
+              <div class="text">
+                <span>My Annotations</span>
+                <span class="description">Minha segunda anotação</span>
+              </div>
+              <div class="button">
+                <span class="material-icons">edit</span>
+                <span class="material-icons close">close</span>
+              </div>
+            </li>
+            <li>
+              <div class="text">
+                <span>My Annotations</span>
+                <span class="description">Minha segunda anotação</span>
+              </div>
+              <div class="button">
+                <span class="material-icons">edit</span>
+                <span class="material-icons close">close</span>
+              </div>
+            </li>
+          </ul>
+          <div class="add">
+            <span class="material-icons">add_circle</span>
+          </div>
+        </div>
+      </section>
+      <section class="section-editor">
+        <div class="tool-bar">
+          <ul>
+            <li class="button">
+              <span class="material-icons" id="undo">
+                refresh
+              </span>
+            </li>
+
+            <li class="button">
+              <span class="material-icons" id="redo">
+                refresh
+              </span>
+            </li>
+
+            <li class="button">
+              <span class="material-icons" id="clear">
+                format_clear
+              </span>
+            </li>
+
+            <div class="line"></div>
+
+            <li>
+              <span class="material-icons">
+                title
+              </span>
+              <select id="font-family">
+                <option
+                  value="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+                  >PT Sans</option
+                >
+                <option value="Arial">Arial</option>
+                <option value="Verdana">Verdana</option>
+                <option value="monospace">monospace</option>
+              </select>
+            </li>
+
+            <li>
+              <span class="material-icons">
+                format_size
+              </span>
+              <select name="" id="font-size">
+                <option value="7">7</option>
+                <option value="6">6</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+              </select>
+            </li>
+
+            <div class="line"></div>
+
+            <li>
+              <span class="material-icons button" id="color">
+                text_format
+              </span>
+              <input type="color" id="font-color" />
+            </li>
+
+            <li>
+              <span class="material-icons button" id="background">
+                font_download
+              </span>
+              <input type="color" id="background-color" />
+            </li>
+
+            <div class="line"></div>
+
+            <li class="button">
+              <span class="material-icons" id="subscript">
+                subscript
+              </span>
+            </li>
+            <li class="button">
+              <span class="material-icons" id="superscript">
+                superscript
+              </span>
+            </li>
+
+            <div class="line"></div>
+
+            <li class="button">
+              <span class="material-icons" id="bold">format_bold</span>
+            </li>
+            <li class="button">
+              <span class="material-icons" id="italic">format_italic</span>
+            </li>
+
+            <li class="button">
+              <span class="material-icons" id="underlined"
+                >format_underlined</span
+              >
+            </li>
+
+            <li class="button">
+              <span class="material-icons" id="strikethrough"
+                >format_strikethrough</span
+              >
+            </li>
+
+            <div class="line"></div>
+
+            <li class="button">
+              <span class="material-icons" id="align_left"
+                >format_align_left</span
+              >
+            </li>
+
+            <li class="button">
+              <span class="material-icons" id="align_center"
+                >format_align_center</span
+              >
+            </li>
+
+            <li class="button">
+              <span class="material-icons" id="align_right"
+                >format_align_right</span
+              >
+            </li>
+
+            <li class="button">
+              <span class="material-icons" id="align_justify"
+                >format_align_justify</span
+              >
+            </li>
+
+            <div class="line"></div>
+
+            <li class="button">
+              <span class="material-icons" id="list_bulleted"
+                >format_list_bulleted</span
+              >
+            </li>
+
+            <li class="button">
+              <span class="material-icons" id="list_numbered">
+                format_list_numbered
+              </span>
+            </li>
+
+            <li class="button">
+              <span class="material-icons" id="indent_increase"
+                >format_indent_increase</span
+              >
+            </li>
+
+            <li class="button">
+              <span class="material-icons" id="indent_decrease"
+                >format_indent_decrease</span
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="editor">
+          <iframe class="iframe" id="editor"></iframe>
+        </div>
+      </section>
+    </section>
+    <footer>
+      <p>Your noPad - 2020 | <a href="#">Git Hub</a></p>
+    </footer>
+
+    <div class="box box-file" id="box-file">
+      <ul>
+        <li><span>Nono</span><span>Ctrl + o</span></li>
+        <li><span>Abrir</span><span>Ctrl + o</span></li>
+        <li><span>Download</span><span>Ctrl + o</span></li>
+        <div class="line"></div>
+        <li><span>Renomear</span><span>Ctrl + o</span></li>
+        <li><span>Apagar</span><span>Ctrl + o</span></li>
+        <li><span>Detalhes</span><span>Ctrl + o</span></li>
+        <div class="line"></div>
+        <li><span>Imprimir</span><span>Ctrl + o</span></li>
+      </ul>
+    </div>
+
+    <div class="box box-download" id="box-download">
+      <ul>
+        <li><span>.docx</span><span>Ctrl + o</span></li>
+        <li><span>.html</span><span>Ctrl + o</span></li>
+        <li><span>.pdf</span><span>Ctrl + o</span></li>
+      </ul>
+    </div>
+
+    <div class="box box-edit" id="box-edit">
+      <ul>
+        <li><span>Desfazer</span><span>Ctrl + o</span></li>
+        <li><span>Refazer</span><span>Ctrl + o</span></li>
+        <div class="line"></div>
+        <li><span>Copiar</span><span>Ctrl + o</span></li>
+        <li><span>Colar</span><span>Ctrl + o</span></li>
+        <li><span>Recortar</span><span>Ctrl + o</span></li>
+        <li><span>Selecionar tudo</span><span>Ctrl + o</span></li>
+      </ul>
+    </div>
+
+    <div class="box box-add" id="box-add">
+      <ul>
+        <li><span>Imagem</span><span>Ctrl + o</span></li>
+        <li><span>Linha</span><span>Ctrl + o</span></li>
+      </ul>
+    </div>
+
+    <div class="box box-format" id="box-format">
+      <ul>
+        <li><span>Texto</span><span>Ctrl + o</span></li>
+        <li><span>Parágrafo</span><span>Ctrl + o</span></li>
+        <li><span>Limpar formotação</span><span>Ctrl + o</span></li>
+      </ul>
+    </div>
+
+    <div class="box box-text">
+      <ul>
+        <li><span>Tamnho</span><span>Ctrl + o</span></li>
+        <li><span>7</span></li>
+        <li><span>6</span></li>
+        <li><span>5</span></li>
+        <li><span>4</span></li>
+        <li><span>3</span></li>
+        <li><span>2</span></li>
+        <li><span>1</span></li>
+      </ul>
+    </div>
+
+    <div class="box box-paragraph">
+      <ul>
+        <li><span>Alinhamento</span><span>Ctrl + o</span></li>
+        <li><span>Esquerda</span><span>Ctrl + o</span></li>
+        <li><span>Centro</span><span>Ctrl + o</span></li>
+        <li><span>Direita</span><span>Ctrl + o</span></li>
+        <li><span>Justificado</span><span>Ctrl + o</span></li>
+      </ul>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
